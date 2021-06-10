@@ -8,8 +8,10 @@ import score
 def run():
     recipes = recipe.load()
     todo = list(recipes.keys())
+    scores = score.read()
+    score.show_order(scores)
     while True:
-        name = random.choice(todo)
+        name = score.select_next(scores)
         drink = recipes[name]
         answer = input('Drink: %s (return to show)' % drink.name)
         print(drink.get_detail(1))
