@@ -10,7 +10,7 @@ class Score:
         self.wrong = 0
 
     def add(self, correct):
-        if correct == 'True':
+        if correct:
             self.right += 1
         else:
             self.wrong += 1
@@ -27,22 +27,49 @@ class Score:
         return '%s (%d/%d)' % (self.name, self.right, self.wrong)
 
 
-def add(recipe, correct):
+def add_score(scores, drink, correct):
+    """Add a new score to our records
+
+    Args:
+        Scores: dict:
+            key: drink
+            value: Score object
+        drink: Name of drink to add
+        correct: True if correct, False if wrong
+    """
+    score = scores.get(drink)
+    if not score:
+        score = Score(drink)
+        scores[drink] = score
+    score.add(correct)
+
+
+def add(scores, recipe, correct):
+    add_score(scores, recipe.name, correct)
     with open('scores.txt', 'a') as fd:
         print('%s %s' % (correct, recipe.name), file=fd)
 
 
-def read():
+def read(recipes):
+    """Read in the scores from previos tests
+
+    Args:
+        recipes: list of recipe names
+    """
     scores = {}
     with open('scores.txt') as fd:
         for line in fd.readlines():
             line = line.strip()
             correct, drink = line.split(maxsplit=1)
-            score = scores.get(drink)
-            if not score:
-                score = Score(drink)
-                scores[drink] = score
-            score.add(correct)
+            if drink not in recipes:
+                print("Score for unknown recipe '%s'" % drink)
+            add_score(scores, drink, correct == 'True')
+
+    # add drinks that have not been asked yet
+    for drink in recipes:
+        if drink not in scores:
+            scores[drink] = Score(drink)
+
     return scores
 
 
@@ -71,5 +98,5 @@ def show_order(scores):
 def select_next(scores):
     ordered = get_ordered(scores)
     todo = list(ordered)
-    select = random.randrange(len(ordered) / 2)
+    select = random.randrange(len(ordered) // 2)
     return todo[select]

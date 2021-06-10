@@ -1,53 +1,146 @@
+highball:
 highball
-    Glass filled with ice
+    glass filled with ice
     1oz whiskey
     fill gingle ale
 
 scotch & soda
-    Glass filled with ice
+    glass filled with ice
     1oz scotch
     fill soda
 
 7 & 7
-    Glass filled with ice
+    glass filled with ice
     1oz seagram's 7 whiskey
     fill 7-up
 
-whikey & 7
-    Glass filled with ice
+whiskey & 7
+    glass filled with ice
     1oz whiskey
     fill 7-up
 
 vodka & 7
-    Glass filled with ice
+    glass filled with ice
     1oz vodka
     fill 7-up
 
 whiskey & water
-    Glass filled with ice
+    glass filled with ice
     1oz whiskey
     fill water
 
 rum & coke
-    Glass filled with ice
+    glass filled with ice
     1oz light rum
     fill coke
     lime garnish
 
 cuba libre
-    Glass filled with ice
+    glass filled with ice
     1oz light rum
     fill coke
     lime garnish extra
 
 gin & tonic
-    Glass filled with ice
+    glass filled with ice
     1oz gin
     fill tonic
     lime garnish
 
 presbyterian
-    Glass filled with ice
+    glass filled with ice
     1oz whiskey
-    1/2 fill ginger ale
     1/2 fill soda
+    1/2 fill ginger ale
+
+vodka presbyterian
+    glass filled with ice
+    1oz whiskey
+    1/2 fill soda
+    1/2 fill 7-up
+
+gin ricky
+    glass filled with ice
+    1oz gin
+    1/2 fill soda
+    1/2 fill lime juice
+    line garnish
+
+old fashioned
+    glass no ice
+    muddle cherry, orange, 2 bitters, 1/2oz sugar syrup
+    fill with ice
+    1oz whiskey
+    2 dash soda
+    flag garnish
+
+juice:
+greyhound
+    glass filled with ice
+    1oz vodka
+    fill grapefruit
+
+salty dog
+    glass salt rim
+    fill with ice
+    1oz vodka
+    fill grapefruit
+
+screwdriver
+    glass filled with ice
+    1oz vodka
+    fill orange juice
+
+tequila sunrise
+    glass filled with ice
+    1oz tequila
+    fill orange juice
+    float 1/2oz grenadine
+
+cape cod
+    glass filled with ice
+    1oz vodka
+    fill cranberry
+    lime garnish
+
+bay breeze
+    glass filled with ice
+    1oz vodka
+    1/2 fill cranberry
+    1/2 fill pineapple
+
+sea breeze
+    glass filled with ice
+    1oz vodka
+    1/2 fill cranberry
+    1/2 fill grapefruit
+
+madras
+    glass filled with ice
+    1oz vodka
+    1/2 fill cranberry
+    1/2 fill orange juice
+
+sex on the beach
+    glass filled with ice
+    1oz vodka
+    1/2oz peach schnapps
+    1/2 fill cranberry
+    1/2 fill orange juice
+
+fuzzy navel
+    glass filled with ice
+    1oz peach schnapps
+    fill orange juice
+
+bloody mary
+    glass filled with ice
+    2 dash salt
+    2 dash pepper
+    2 dash celery saly
+    4 drops worcester sauce
+    1 drop tabasco
+    1oz vodka
+    fill tomato juice
+    stir well
+    celery and lime garnish
