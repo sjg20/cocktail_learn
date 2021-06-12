@@ -98,5 +98,7 @@ def show_order(scores):
 def select_next(scores):
     ordered = get_ordered(scores)
     todo = list(ordered)
-    select = random.randrange(len(ordered) // 2)
+    #select = random.randrange(len(ordered) // 2)
+    #select = int(random.triangular(0, len(todo), 0))
+    select = int(random.betavariate(.5, 5) * len(todo))
     return todo[select]
